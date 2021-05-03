@@ -72,7 +72,7 @@ tr {
     cursor: pointer;
 }
 
-#s1, #s2, #s3, #s4 {
+.selezione {
     float: left;
     height: 40px;
     width: 40px;
@@ -81,6 +81,7 @@ tr {
     margin-left: 5px;
     margin-right: 5px;
     background-color: khaki;
+    cursor: pointer;
 }
 
 #tentativo {
@@ -113,11 +114,11 @@ tr {
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
     transition-duration: 0.2s;
+    cursor: pointer;
 }
 
-.tenta:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
+.colori:hover, .tenta:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .tabella {
