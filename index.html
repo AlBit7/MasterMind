@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Document</title>
+    <title>Master Mind</title>
 
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
@@ -12,14 +12,16 @@
 <body>
 
     <div class="seleziona-sequenza">
+
         <div id="tentativo">
 
-            <div id="s1"></div>
-            <div id="s2"></div>
-            <div id="s3"></div>
-            <div id="s4"></div>
+            <div id="s1" class="selezione"></div>
+            <div id="s2" class="selezione"></div>
+            <div id="s3" class="selezione"></div>
+            <div id="s4" class="selezione"></div>
 
         </div>
+
         <div class="menu-colori">
             <div class="colori" id="yellow" style="background-color: yellow;"></div>
             <div class="colori" id="green" style="background-color: rgb(0, 161, 0);"></div>
@@ -29,10 +31,11 @@
             <div class="colori" id="black" style="background-color: black;"></div>
         </div>
 
-        <br>
-        <div id="coloreSelezionato">colore selezionato: giallo</div>
+        <br><div id="coloreSelezionato">colore selezionato: giallo</div>
         <br><label class="tenta" id="vai">10 tentativi</label>
+
     </div>
+
     <div class="tabella">
         <table>
             <tr>
