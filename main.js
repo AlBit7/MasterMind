@@ -45,7 +45,7 @@ function controlla(numeriComputer, numeriUtente) {
     for (let i = 0; i < numeriUtente.length; i++) {
         if (numeriUtente[i] == soluzione[i]) {
             pallini[0]++;
-            soluzione[i] = -1;
+            soluzione[i] = -2;
         }
     }
 
