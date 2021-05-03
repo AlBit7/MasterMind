@@ -1,0 +1,127 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    background-color: khaki;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+tr {
+    height: 50px;
+}
+
+.scelta {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.esito {
+    height: 40px;
+    width: 40px;
+    margin-left: 30px;
+}
+
+.contenitore-pallini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 20px;
+    width: 40px;
+    overflow: hidden;
+}
+
+.pallino {
+    float: left;
+    height: 10px;
+    width: 10px;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+#tr-pallino {
+    height: 40px;
+}
+
+.menu-colori {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.colori {
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#s1, #s2, #s3, #s4 {
+    float: left;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 2px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: khaki;
+}
+
+#tentativo {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.seleziona-sequenza {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tenta {
+    height: 30px;
+    width: 80px;
+    border-radius: 30px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.tenta {
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    transition-duration: 0.2s;
+}
+
+.tenta:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.tabella {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
