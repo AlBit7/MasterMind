@@ -99,6 +99,7 @@ vai.addEventListener('click', function () {
     pallini = controlla(soluzione, p)
     if (pallini[0] == 4) {
         label.innerHTML = "INDOVINATO!!";
+        vai.innerHTML = "riprova";
     }
 
     for (let i = 0; i < pallini[0]; i++) {
