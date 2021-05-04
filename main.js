@@ -5,20 +5,13 @@ var tentativi = 10;
 
 p = new Array(-1, -1, -1, -1);
 
-const yellow = document.getElementById('yellow');
-const green  = document.getElementById('green');
-const blue   = document.getElementById('blue');
-const red    = document.getElementById('red');
-const white  = document.getElementById('white');
-const black  = document.getElementById('black');
+const s1    = document.getElementById('s1');
+const s2    = document.getElementById('s2');
+const s3    = document.getElementById('s3');
+const s4    = document.getElementById('s4');
 
-const s1     = document.getElementById('s1');
-const s2     = document.getElementById('s2');
-const s3     = document.getElementById('s3');
-const s4     = document.getElementById('s4');
-
-const label  = document.getElementById('coloreSelezionato');
-const vai    = document.getElementById('vai');
+const label = document.getElementById('coloreSelezionato');
+const vai   = document.getElementById('vai');
 
 function convertiInColore(colore) {
     switch (colore) {
@@ -72,7 +65,7 @@ function controlla(numeriComputer, numeriUtente) {
         }
     }
 
-    console.log('pallini bianchi-neri: ' + pallini[0] + '-' + pallini[1]);
+    console.log('pallini bianchi-neri: ' + pallini[0] + ' - ' + pallini[1]);
 
     return pallini;
 
