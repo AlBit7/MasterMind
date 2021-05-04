@@ -5,13 +5,13 @@ var tentativi = 10;
 
 p = new Array(-1, -1, -1, -1);
 
-const s1    = document.getElementById('s1');
-const s2    = document.getElementById('s2');
-const s3    = document.getElementById('s3');
-const s4    = document.getElementById('s4');
+const s1 = document.getElementById('s1');
+const s2 = document.getElementById('s2');
+const s3 = document.getElementById('s3');
+const s4 = document.getElementById('s4');
 
 const label = document.getElementById('coloreSelezionato');
-const vai   = document.getElementById('vai');
+const vai = document.getElementById('vai');
 
 function convertiInColore(colore) {
     switch (colore) {
@@ -73,6 +73,13 @@ function controlla(numeriComputer, numeriUtente) {
 
 vai.addEventListener('click', function () {
 
+    if (vai.innerHTML === "riprova") {
+        
+        console.log(vai.innerHTML);
+        window.location.reload();
+        
+    }
+
     // sposta i colori nella tabella degli storici
 
     const t1 = document.getElementById('t' + tentativi + '-1');
@@ -112,7 +119,22 @@ vai.addEventListener('click', function () {
 
     tentativi--;
 
-    vai.innerHTML = tentativi + ' tentativi';
+    if (tentativi == 0) {
+
+        label.innerHTML = "Fine dei tentativi";
+
+        s1.style.backgroundColor = convertiInColore(soluzione[0]);
+        s2.style.backgroundColor = convertiInColore(soluzione[1]);
+        s3.style.backgroundColor = convertiInColore(soluzione[2]);
+        s4.style.backgroundColor = convertiInColore(soluzione[3]);
+
+        vai.innerHTML = "riprova";
+
+    } else {
+
+        vai.innerHTML = tentativi + ' tentativi';
+    
+    }
 
 });
 
